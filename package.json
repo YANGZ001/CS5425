@@ -1,5 +1,5 @@
 {
-  "name": "Demo for CS5425",
+  "name": "Demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,7 @@
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-react": "^7.16.7",
     "nodemon": "^2.0.15"
   }
 }
