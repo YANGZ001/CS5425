@@ -50,20 +50,88 @@ var SubPage = /*#__PURE__*/function (_React$Component) {
   return SubPage;
 }(React.Component);
 
-var Home = /*#__PURE__*/function (_React$Component2) {
-  _inherits(Home, _React$Component2);
+var WelcomePage = /*#__PURE__*/function (_React$Component2) {
+  _inherits(WelcomePage, _React$Component2);
 
-  var _super2 = _createSuper(Home);
+  var _super2 = _createSuper(WelcomePage);
+
+  function WelcomePage() {
+    _classCallCheck(this, WelcomePage);
+
+    return _super2.apply(this, arguments);
+  }
+
+  _createClass(WelcomePage, [{
+    key: "render",
+    value: function render() {
+      var file1 = "./resource/CS5425.png";
+      var file2 = "./resource/problem-motivation.png";
+      return /*#__PURE__*/React.createElement("div", {
+        className: "container-fluid"
+      }, /*#__PURE__*/React.createElement("h2", {
+        style: {
+          "text-align": "center"
+        }
+      }, "Hi there, this is the website for CS5425 project"), /*#__PURE__*/React.createElement("img", {
+        src: file1,
+        class: "img-fluid mx-auto rounded d-block",
+        alt: "Responsive image"
+      }), /*#__PURE__*/React.createElement("img", {
+        src: file2,
+        class: "img-fluid mx-auto rounded d-block",
+        alt: "Responsive image"
+      }));
+    }
+  }]);
+
+  return WelcomePage;
+}(React.Component);
+
+var NewPage = /*#__PURE__*/function (_React$Component3) {
+  _inherits(NewPage, _React$Component3);
+
+  var _super3 = _createSuper(NewPage);
+
+  function NewPage() {
+    _classCallCheck(this, NewPage);
+
+    return _super3.apply(this, arguments);
+  }
+
+  _createClass(NewPage, [{
+    key: "render",
+    value: function render() {
+      var file = "./resource/CS5425.jpg";
+      return /*#__PURE__*/React.createElement("div", {
+        className: "container-fluid"
+      }, /*#__PURE__*/React.createElement("h2", {
+        style: {
+          "text-align": "center"
+        }
+      }, "We will continue adding more analysis results..."), /*#__PURE__*/React.createElement("img", {
+        src: file,
+        class: "img-fluid mx-auto rounded d-block",
+        alt: "Responsive image"
+      }));
+    }
+  }]);
+
+  return NewPage;
+}(React.Component);
+
+var Home = /*#__PURE__*/function (_React$Component4) {
+  _inherits(Home, _React$Component4);
+
+  var _super4 = _createSuper(Home);
 
   function Home() {
     var _this;
 
     _classCallCheck(this, Home);
 
-    _this = _super2.call(this);
+    _this = _super4.call(this);
     _this.state = {
-      // issues: [],
-      display: 1
+      display: -1
     };
     return _this;
   }
@@ -90,6 +158,16 @@ var Home = /*#__PURE__*/function (_React$Component2) {
       }, "Ukraine Russia War Twitter Sentiment Analysis "), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement("div", {
         class: "container-fluid row"
       }, /*#__PURE__*/React.createElement("div", {
+        class: "col btn-group btn-group-lg mr-2",
+        role: "group",
+        "aria-label": "Basic example"
+      }, /*#__PURE__*/React.createElement("button", {
+        type: "button",
+        class: "btn btn-primary btn-lg",
+        onClick: function onClick() {
+          _this2.setDisplay(-1);
+        }
+      }, "Home")), /*#__PURE__*/React.createElement("div", {
         class: "col btn-group btn-group-lg mr-2",
         role: "group",
         "aria-label": "Basic example"
@@ -139,7 +217,17 @@ var Home = /*#__PURE__*/function (_React$Component2) {
         onClick: function onClick() {
           _this2.setDisplay(4);
         }
-      }, "03/14 to 03/20"))), /*#__PURE__*/React.createElement("hr", null), this.state.display == 0 && /*#__PURE__*/React.createElement(SubPage, {
+      }, "03/14 to 03/20")), /*#__PURE__*/React.createElement("div", {
+        class: "col btn-group btn-group-lg mr-2",
+        role: "group",
+        "aria-label": "Basic example"
+      }, /*#__PURE__*/React.createElement("button", {
+        type: "button",
+        class: "btn btn-primary btn-lg",
+        onClick: function onClick() {
+          _this2.setDisplay(5);
+        }
+      }, "continuing..."))), /*#__PURE__*/React.createElement("hr", null), this.state.display == -1 && /*#__PURE__*/React.createElement(WelcomePage, null), this.state.display == 0 && /*#__PURE__*/React.createElement(SubPage, {
         file: "/resource/overview.jpg"
       }), this.state.display == 1 && /*#__PURE__*/React.createElement(SubPage, {
         file: "/resource/feb21_feb27.png"
@@ -149,7 +237,7 @@ var Home = /*#__PURE__*/function (_React$Component2) {
         file: "/resource/mar07_mar13.png"
       }), this.state.display == 4 && /*#__PURE__*/React.createElement(SubPage, {
         file: "/resource/mar14_mar20.png"
-      }));
+      }), this.state.display == 5 && /*#__PURE__*/React.createElement(NewPage, null));
     }
   }]);
 
