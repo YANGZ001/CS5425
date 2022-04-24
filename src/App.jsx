@@ -15,7 +15,7 @@ class WelcomePage extends React.Component {
     const file2 = "./resource/problem-motivation.png";
     return (
       <div className="container-fluid">
-        <h2 style={{"text-align": "center"}} >Hi there, this is the website for CS5425 project</h2>
+        {/* <h2 style={{"text-align": "center"}} >Hi there, this is the website for CS5425 project</h2> */}
         <img src={file1} class="img-fluid mx-auto rounded d-block" alt="Responsive image" />
         <img src={file2} class="img-fluid mx-auto rounded d-block" alt="Responsive image" />
       </div>
@@ -60,7 +60,7 @@ class Home extends React.Component {
         <hr />
         <div class="container-fluid row">
           <div class="col btn-group btn-group-lg mr-2" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary btn-lg" onClick={() => { this.setDisplay(-1) }}>Home</button>
+            <button type="button" class="btn btn-primary btn-lg" onClick={() => { this.setDisplay(-1) }}>About</button>
           </div>
           <div class="col btn-group btn-group-lg mr-2" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-primary btn-lg" onClick={() => { this.setDisplay(0) }}>Overview</button>
