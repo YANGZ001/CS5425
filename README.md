@@ -1,8 +1,9 @@
-# CS5425
-Demo and code for CS4225/5425
+# CS4225/5425
+Demo and codes for CS4225/5425
 
 ## Running instructions
 1. Install node version: 14+
+1. Run `git clone https://github.com/YANGZ001/CS5425.git  `
 2. Run `cd CS5425`
 3. Run `./run`
 
@@ -13,10 +14,10 @@ Demo and code for CS4225/5425
 
 | Directory           | Author       |
 | ------------------- | ------------ |
-| Spark&data pipeline | Huang Zirui  |
-| Analysis            | Yew Kaizhe   |
-| Data Processing     | Wu Weiye     |
-| Model               | Wu Yifan     |
-| Results             | Tristan Chua |
+| spark&data_pipeline | Huang Zirui  |
+| analysis            | Yew Kaizhe   |
+| data_processing     | Wu Weiye     |
+| model               | Wu Yifan     |
+| results             | Tristan Chua |
 | All other files     | Zhang Yang   |
 
