@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# for ui
+echo "ui"
+npm install 
+echo "npm install exit code = $?"
+npm run compile 
+echo "npm run compile exit code = $?"
+npm start &
+echo "npm start exit code = $?"
+uiPID=$!
+echo "UI server pid = $uiPID"
+
